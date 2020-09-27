@@ -24,4 +24,8 @@ public class MshService {
     public Msh addField(Msh msh){
         return mshRepo.save(msh);
     }
+
+    public Msh updateField(Msh msh){
+        return mshRepo.save(msh);
+    }
 }

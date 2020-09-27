@@ -54,5 +54,4 @@ public class Patient implements Serializable {
     private LocalDateTime deathTime;
     private String patientDeathIndicator;
 
-
 }

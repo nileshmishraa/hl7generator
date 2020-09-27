@@ -29,4 +29,12 @@ public class MshController {
         Msh msh1=mshService.addField(msh);
         return new ResponseEntity<>(msh1, HttpStatus.CREATED);
     }
+
+    @PutMapping("update/{id}")
+    public ResponseEntity<Msh> updateMsh(@RequestBody Msh msh, @PathVariable("id") String messageControlId){
+        Msh msh1 = mshService.updateField(msh);
+        return new ResponseEntity<>(msh1, HttpStatus.CREATED);
+    }
+
+
 }
